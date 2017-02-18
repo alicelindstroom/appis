@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Appis</name>
+    <name>Bakapp</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Gymnasiearbete av Alice Lindström. En bakapp.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="alicelindstrom@hotmail.com" href="http://alicelindstrom.se">
+        Alice Lindström
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
@@ -79,17 +79,16 @@
         <splash height="480" platform="ios" src="www/res/screen/ios/Default~iphone.png" width="320" />
         
         <preference name="SplashScreen" value="screen" />
-<preference name="SplashScreenDelay" value="10000" />
+		<preference name="SplashScreenDelay" value="10000" />
         
         
-         <preference name="SplashScreenDelay" value="8000" />
-     <preference name="AutoHideSplashScreen" value="true" />
-     <preference name="SplashScreenDelay" value="0"/>
-     <preference name="FadeSplashScreenDuration" value="0"/>
-      <preference name="FadeSplashScreen" value="true"/>
-      <preference name="FadeSplashScreenDuration" value="550"/>
+        <preference name="SplashScreenDelay" value="8000" />
+    	<preference name="AutoHideSplashScreen" value="true" />
+    	<preference name="SplashScreenDelay" value="0"/>
+    	<preference name="FadeSplashScreenDuration" value="0"/>
+   	  	<preference name="FadeSplashScreen" value="true"/>
+     	<preference name="FadeSplashScreenDuration" value="550"/>
       
-        
     </platform>
     <platform name="wp8">
         <icon height="99" platform="wp8" src="www/res/icon/wp8/ApplicationIcon.png" width="99" />
