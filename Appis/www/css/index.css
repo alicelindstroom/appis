@@ -256,6 +256,20 @@ h2::before {
 	clear: both;
 }
 
+h7 {
+	font-size: 1.0em;
+    font-weight:normal;
+    background-color: transparent;
+    margin: 0px;
+    padding: 1px;
+    text-align: left;
+    width: 100%;
+    font-family: 'beauty_and_the_beast', sans; 
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+	
+}
+
 .ingredi {
 	max-width: 80%;
 	margin: auto;
