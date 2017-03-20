@@ -73,7 +73,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-image: url("../img/backgroundb.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: repeat;
 	background-attachment: fixed;
     height:100%;
@@ -145,6 +145,7 @@ section {
 	max-width: 100%;
 	margin: auto;
 	padding: 5px;
+	overflow: hidden;
 }
 
 #wrapper {
@@ -567,6 +568,7 @@ li a:hover {
 
 /* bildspelet på startsidan*/
 .slideshow {
+	background: transparent;
 	background-size: 100%;
 	max-width: 100%;
 	position:relative;
@@ -575,6 +577,7 @@ li a:hover {
 
 .mySlides {
 	overflow:hidden;
+	background: transparent;
 }
 
 .img {
@@ -603,4 +606,77 @@ h4 a {
    text-decoration: none;
 }
 
+
+.diamonds{
+    width: 100%;
+	overflow: hidden;
+	margin-top: -40%;
+	margin-bottom: 5%;
+}
+
+
+.diamond {
+    width: 100%;
+    margin-left: 0%;
+    transform: rotate(-45deg);
+}
+
+.diamond a{
+    float:left;
+    width: 65%;
+    padding-bottom: 65%;
+    left: 0;
+    opacity: 1;
+}
+.diamond a:hover{
+    opacity: 0.5;
+}
+
+.d1 {
+	background-color: #dee9eb;
+	   margin: 0.5%;
+	   margin-left: -86%;
+	   clear:left;
+	}
+	
+.d2 {
+	background: url("../img/diamanter/glitter.jpg") center no-repeat;
+	margin: 0.5%;
+	margin-left: -152%;
+	clear:left;
+
+}
+	
+.d3 {
+	background: url("../img/diamanter/bullar.jpg") center no-repeat;
+	margin: 0.5%;
+	margin-left: -86%;
+}
+
+.d4 {
+	background-color: #b525a1;
+	margin: 0.5%;
+	margin-left: -20%;
+}
+	
+
+.d5 {
+	clear: left;
+	background-color: #b525a1;
+	margin: 0.5%;
+	margin-left: -152%;
+}
+	
+.d6 {
+	background: #b525a1;
+	margin: 0.5%;
+	margin-left: -86%;
+	margin-top: -7%;
+}
+
+.d7 {
+	background-color: #f5e3e1;
+	margin: 0.5%;
+	margin-left: -20%;
+}
 
