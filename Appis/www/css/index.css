@@ -326,7 +326,7 @@ legend {
 	margin: -2% auto;
 	padding: 8% 5px;
 	color: #000;
-	background: url("../ingreditop1.png") top no-repeat;
+	background: url("../img/ingreditop1.png") top no-repeat;
 	background-size: 70%;
 	z-index: 1;
 }
@@ -335,7 +335,7 @@ legend {
 	margin: -1% auto 0% auto;
 	padding: 0px 5px;
 	color: #000;
-	background: url("../ingredibottom.png") bottom no-repeat;
+	background: url("../img/ingredibottom.png") bottom no-repeat;
 	background-size: 70%;
 	z-index: 2;
 }
@@ -640,7 +640,7 @@ h4 a {
 	}
 	
 .d2 {
-	background: url("../img/diamanter/glitter.jpg") center no-repeat;
+	background: url("../img/diamanter/cuties.jpg") center no-repeat;
 	margin: 0.5%;
 	margin-left: -152%;
 	clear:left;
@@ -654,7 +654,7 @@ h4 a {
 }
 
 .d4 {
-	background-color: #b525a1;
+	background: url("../img/diamanter/cuties.jpg") center no-repeat;
 	margin: 0.5%;
 	margin-left: -20%;
 }
@@ -671,7 +671,7 @@ h4 a {
 	background: #b525a1;
 	margin: 0.5%;
 	margin-left: -86%;
-	margin-top: -7%;
+
 }
 
 .d7 {

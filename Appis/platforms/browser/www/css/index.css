@@ -51,7 +51,6 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
-
  
 * {
    /* -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */*/
@@ -74,7 +73,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-image: url("../img/backgroundb.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: repeat;
 	background-attachment: fixed;
     height:100%;
@@ -125,11 +124,20 @@ h1 {
     text-align:center;
     position: fixed;
     bottom: 0;
-    font-family: sans;
+    font-family: RiseUP, sans;
     text-transform: uppercase;
--webkit-box-shadow: 0px -12px 21px -15px rgba(0,0,0,0.55);
--moz-box-shadow: 0px -12px 21px -15px rgba(0,0,0,0.55);
-box-shadow: 0px -12px 21px -15px rgba(0,0,0,0.55);
+	-webkit-box-shadow: 0px -12px 21px -15px rgba(0,0,0,0.55);
+	-moz-box-shadow: 0px -12px 21px -15px rgba(0,0,0,0.55);
+	box-shadow: 0px -12px 21px -15px rgba(0,0,0,0.55);
+}
+
+.menu ul li a {
+	font-family: RiseUP, sans;
+	font-size: 1.05em;
+    font-weight:bold;;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 section {
@@ -137,6 +145,7 @@ section {
 	max-width: 100%;
 	margin: auto;
 	padding: 5px;
+	overflow: hidden;
 }
 
 #wrapper {
@@ -238,22 +247,37 @@ h2::before {
 }
 
 
-
-.clock {
-	background-image: url(../img/clockicon.png) no-repeat;
-	max-width: 4%;
-	padding: 1px 1px 1px 5px;
-	clear: both;
-}
-
 .fact {
 	max-width: 100%;
 	margin: 1% auto 2% auto;
-	padding: -1% 1px;
+	padding: 0px 1px;
 	text-align: center;
 	background-color: #f5e3e1;
 	color: #000;
 	clear: both;
+}
+
+.fact p{
+	color: black;
+    font-size: 1.0em;
+    font-weight:normal;
+    font-family: arial , sans; 
+    padding: 2px;
+}
+
+
+h7 {
+	font-size: 1.0em;
+    font-weight:normal;
+    background-color: transparent;
+    margin: 0px;
+    padding: 1px;
+    text-align: left;
+    width: 100%;
+    font-family: 'beauty_and_the_beast', sans; 
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+	
 }
 
 .ingredi {
@@ -302,7 +326,7 @@ legend {
 	margin: -2% auto;
 	padding: 8% 5px;
 	color: #000;
-	background: url("../ingreditop1.png") top no-repeat;
+	background: url("../img/ingreditop1.png") top no-repeat;
 	background-size: 70%;
 	z-index: 1;
 }
@@ -311,7 +335,7 @@ legend {
 	margin: -1% auto 0% auto;
 	padding: 0px 5px;
 	color: #000;
-	background: url("../ingredibottom.png") bottom no-repeat;
+	background: url("../img/ingredibottom.png") bottom no-repeat;
 	background-size: 70%;
 	z-index: 2;
 }
@@ -343,7 +367,7 @@ legend {
 }
 
 .lista li a {
-	font-family: RiseUP, Innuendo, sans;
+	font-family: RiseUP, sans;
 	font-size: 0.8em;
     font-weight:bold;;
     letter-spacing: 2px;
@@ -370,7 +394,6 @@ legend {
 	color: #000;
 }
 
-
 .popular {
 	max-width: 83%;
 	margin: auto;
@@ -384,10 +407,7 @@ legend {
 .ribbon {
 	margin: auto;
 	width: 100%;
-	
 }
-
-
 
 ul {
     list-style-type: none;
@@ -412,7 +432,6 @@ li a {
 li a:hover {
     background-color: #111;
 }
-
 
 .cirklar {
 	margin: auto;
@@ -486,9 +505,6 @@ li a:hover {
 	padding: 5px;
 }
 
-
-
-
 .receptcategory_list { 
 	margin: auto; 
 	padding:0px; 
@@ -550,11 +566,9 @@ li a:hover {
 	background-color: transparent;
 	} 
 
-
-
-
 /* bildspelet på startsidan*/
 .slideshow {
+	background: transparent;
 	background-size: 100%;
 	max-width: 100%;
 	position:relative;
@@ -563,12 +577,12 @@ li a:hover {
 
 .mySlides {
 	overflow:hidden;
+	background: transparent;
 }
 
 .img {
 	min-width: 100%;
 }
-
 
 /*rubrik/länkarna i bildspelet*/
 h4 { 
@@ -592,4 +606,77 @@ h4 a {
    text-decoration: none;
 }
 
+
+.diamonds{
+    width: 100%;
+	overflow: hidden;
+	margin-top: -40%;
+	margin-bottom: 5%;
+}
+
+
+.diamond {
+    width: 100%;
+    margin-left: 0%;
+    transform: rotate(-45deg);
+}
+
+.diamond a{
+    float:left;
+    width: 65%;
+    padding-bottom: 65%;
+    left: 0;
+    opacity: 1;
+}
+.diamond a:hover{
+    opacity: 0.5;
+}
+
+.d1 {
+	background-color: #dee9eb;
+	   margin: 0.5%;
+	   margin-left: -86%;
+	   clear:left;
+	}
+	
+.d2 {
+	background: url("../img/diamanter/cuties.jpg") center no-repeat;
+	margin: 0.5%;
+	margin-left: -152%;
+	clear:left;
+
+}
+	
+.d3 {
+	background: url("../img/diamanter/bullar.jpg") center no-repeat;
+	margin: 0.5%;
+	margin-left: -86%;
+}
+
+.d4 {
+	background: url("../img/diamanter/cuties.jpg") center no-repeat;
+	margin: 0.5%;
+	margin-left: -20%;
+}
+	
+
+.d5 {
+	clear: left;
+	background-color: #b525a1;
+	margin: 0.5%;
+	margin-left: -152%;
+}
+	
+.d6 {
+	background: #b525a1;
+	margin: 0.5%;
+	margin-left: -86%;
+
+}
+
+.d7 {
+	background-color: #f5e3e1;
+	margin: 0.5%;
+	margin-left: -20%;
+}
 
