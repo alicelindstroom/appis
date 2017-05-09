@@ -49,6 +49,14 @@
         <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
         <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
+        
+        <preference name="SplashMaintainAspectRatio" value="true" />
+		<preference name="SplashShowOnlyFirstTime" value="true" />
+		   <preference name="AutoHideSplashScreen" value="true" />
+		   <preference name="SplashScreenDelay" value="3000" />
+		<preference name="SplashScreenDelay" value="0"/>
+		
+		
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
@@ -84,7 +92,6 @@
         
         <preference name="SplashScreenDelay" value="8000" />
     	<preference name="AutoHideSplashScreen" value="true" />
-    	<preference name="SplashScreenDelay" value="0"/>
     	<preference name="FadeSplashScreenDuration" value="0"/>
    	  	<preference name="FadeSplashScreen" value="true"/>
      	<preference name="FadeSplashScreenDuration" value="550"/>
@@ -113,6 +120,35 @@
         <splash height="1920" platform="windows" src="www/res/screen/windows/SplashScreenPhone.scale-240.png" width="1152" />
     </platform>
     
+      <!-- FLUMM -->
+     <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SplashScreen">
+                <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/SplashScreen.java" target-dir="src/org/apache/cordova/splashscreen" />
+    </platform>
+    
+    
+  
+    <platform name="browser">
+        <js-module src="src/browser/SplashScreenProxy.js" name="SplashScreenProxy">
+            <runs />
+        </js-module>
+    </platform>
+    
+    <platform name="browser">
+    <preference name="SplashScreen" value="/images/browser/splashscreen.jpg" /> <!-- defaults to "/img/logo.png" -->
+    <preference name="SplashScreenDelay" value="3000" /> <!-- defaults to "3000" -->
+    <preference name="SplashScreenBackgroundColor" value="green" /> <!-- defaults to "#464646" -->
+    <preference name="ShowSplashScreen" value="false" /> <!-- defaults to "true" -->
+    <preference name="SplashScreenWidth" value="600" /> <!-- defaults to "170" -->
+    <preference name="SplashScreenHeight" value="300" /> <!-- defaults to "200" -->
+</platform>
     
         <preference name="SplashScreenDelay" value="8000" />
      <preference name="AutoHideSplashScreen" value="true" />
@@ -121,7 +157,7 @@
       <preference name="FadeSplashScreen" value="true"/>
       <preference name="FadeSplashScreenDuration" value="750"/>
       
-      
+<!-- FLUMM -->
     
     <access origin="*" />
     <allow-intent href="http://*/*" />

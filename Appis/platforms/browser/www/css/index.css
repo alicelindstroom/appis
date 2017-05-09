@@ -395,7 +395,7 @@ legend {
 }
 
 .popular {
-	max-width: 83%;
+	max-width: 82%;
 	margin: auto;
 	padding: 5%;
 	background-color: #dee9eb;
@@ -633,28 +633,31 @@ h4 a {
 }
 
 .d1 {
-	background-color: #dee9eb;
-	   margin: 0.5%;
-	   margin-left: -86%;
-	   clear:left;
+	background: url("../img/diamanter/paskkaka1.jpg") center no-repeat;
+	background-size: 100%;
+	margin: 0.5%;
+	margin-left: -86%;
+	clear:left;
 	}
 	
 .d2 {
-	background: url("../img/diamanter/cuties.jpg") center no-repeat;
+	background: url("../img/diamanter/pearpie.jpg") center no-repeat;
+	background-size: 100%;
 	margin: 0.5%;
 	margin-left: -152%;
 	clear:left;
-
 }
 	
 .d3 {
-	background: url("../img/diamanter/bullar.jpg") center no-repeat;
+	background: url("../img/diamanter/cuties.jpg") center no-repeat;
+	background-size: 100%;
 	margin: 0.5%;
 	margin-left: -86%;
 }
 
 .d4 {
-	background: url("../img/diamanter/cuties.jpg") center no-repeat;
+	background: url("../img/diamanter/bullar1.jpg") center no-repeat;
+	background-size: 100%;
 	margin: 0.5%;
 	margin-left: -20%;
 }
@@ -662,20 +665,20 @@ h4 a {
 
 .d5 {
 	clear: left;
-	background-color: #b525a1;
+	background-color: #dee9eb;
 	margin: 0.5%;
 	margin-left: -152%;
 }
 	
 .d6 {
-	background: #b525a1;
+	background: url("../img/diamanter/tryffel1.jpg") center no-repeat;
+	background-size: 100%;
 	margin: 0.5%;
 	margin-left: -86%;
-
 }
 
 .d7 {
-	background-color: #f5e3e1;
+	background-color: #dee9eb;
 	margin: 0.5%;
 	margin-left: -20%;
 }
